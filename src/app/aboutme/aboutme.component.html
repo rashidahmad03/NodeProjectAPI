@@ -12,7 +12,7 @@
           <h4>
                     Assistant Application Developer
           </h4>
-        <div class="description">            <ul>
+        <div [ngStyle]="description()">            <ul>
            <li>
               Overall 2 years of work experience in software development.
             </li>
@@ -47,7 +47,7 @@
               </a>
             </li>
             <li>
-              <a href="#contact">
+              <a href="#"  (click)="contact($event)">
                          Hire me for your next project
               </a>
             </li>

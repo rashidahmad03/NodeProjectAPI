@@ -30,8 +30,28 @@ export class AboutmeComponent implements OnInit {
     this.data.changeMessage("Project");
     console.log(this.message);
   }
+  contact() {
+    this.data.changeMessage("contact");
+    console.log(this.message);
+  }
 
-  
+  getIsMobile(): boolean {
+    const w = document.documentElement.clientWidth;
+    const breakpoint = 720;
+    console.log(w);
+    if (w < breakpoint) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  description(){
+    let styles = {
+      'padding-left': this.getIsMobile()? '' : '21vw'
+    };
+    return styles;
+  }
  
 
 
