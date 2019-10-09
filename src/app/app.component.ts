@@ -15,7 +15,7 @@ export class AppComponent {
   message: string;
   getIsMobile(): boolean {
     const w = document.documentElement.clientWidth;
-    const breakpoint = 992;
+    const breakpoint = 720;
     console.log(w);
     if (w < breakpoint) {
       return true;
