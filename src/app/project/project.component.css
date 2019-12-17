@@ -1,0 +1,14 @@
+.skyline{
+    background-image: url('../../assets/img/skyline1.jpg');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.onlinechat{
+    background-image: url('../../assets/img/onlinechat.png');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
