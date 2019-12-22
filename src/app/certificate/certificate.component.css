@@ -1,0 +1,93 @@
+
+/* Links */
+a {
+    color: #3498db;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #c0392b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   Image Mask
+   ========================================================================== */
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.grid figcaption h5 {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+	
+}
+
+.grid figcaption a {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+/* Caption Style */
+.mask figure {
+	overflow: hidden;
+}
+
+.mask figure img {
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
