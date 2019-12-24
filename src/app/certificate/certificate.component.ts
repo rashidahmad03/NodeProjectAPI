@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CertificateComponent implements OnInit {
 
+ 
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
+
+
 }
+
