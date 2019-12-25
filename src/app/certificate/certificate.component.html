@@ -5,7 +5,7 @@
                 a modal for each of your projects. -->
     <!-- The Modal -->
     <div class="modal fade" id="myModal">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
           <!-- Modal Header -->
@@ -16,9 +16,16 @@
 
           <!-- Modal body -->
           <div class="modal-body">
+		
+              <figure>
+          <img  src={{modata.URL}} alt="" style="
+    width: 100%;
+" />
+         
+        </figure><!-- /figure -->
             <div *ngFor="let ob of modata.pdf; index as j" >
-             
-              {{ob}}
+			
+              <a href={{ob}}> Download link:{{ob}} </a>
 
             </div>
 
