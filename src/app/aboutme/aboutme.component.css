@@ -110,3 +110,7 @@
 .description{
   padding-left: 21vw;
 }
+.nowrap{
+	 white-space: nowrap ; 
+	
+}
