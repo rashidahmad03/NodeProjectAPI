@@ -23,6 +23,15 @@ this.modata = {
 listcerti = {
   certificat: [
     {
+      Name: 'Salesforce Platform Developer I',
+      URL: '/assets/img/certificate/Salesforce_Platform_Developer_I.jpg',
+      Details: 'this update',
+      Org: 'Sololear',
+      pdf: [
+        '/assets/certificate/Salesforce_Platform_Developer_I.pdf'
+      ]
+    },
+    {
       Name: 'C Programing',
       URL: '/assets/img/certificate/C.jpg',
       Details: 'this update',

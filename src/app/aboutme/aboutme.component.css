@@ -112,5 +112,5 @@
 }
 .nowrap{
 	 white-space: nowrap ; 
-	
+   padding-left: -15px;
 }
