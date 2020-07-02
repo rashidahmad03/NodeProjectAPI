@@ -1,42 +1,36 @@
 <div class="container">
   <div class="row">
-
     <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
                 a modal for each of your projects. -->
     <!-- The Modal -->
     <div class="modal fade" id="myModal">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-
           <!-- Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">{{modata.Name}}</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">{{ modata.Name }}</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
           </div>
 
           <!-- Modal body -->
           <div class="modal-body">
-		
-              <figure>
-          <img  src={{modata.URL}} alt="" style="
-    width: 100%;
-" />
-         
-        </figure><!-- /figure -->
-            <div *ngFor="let ob of modata.pdf; index as j" >
-			
-              <a href={{ob}}> Download link:{{ob}} </a>
-
+            <figure>
+              <img src="{{ modata.URL }}" alt="" style="width: 100%;" />
+            </figure>
+            <!-- /figure -->
+            <div *ngFor="let ob of modata.pdf; index as j">
+              Download link:<a href="{{ ob }}"> {{ modata.Name }} </a>
             </div>
-
-           
           </div>
 
           <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-
+          <!--div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div-->
         </div>
       </div>
     </div>
@@ -44,16 +38,31 @@
     <div class="col-md-4" *ngFor="let cert of listcerti.certificat; index as i">
       <div class="grid mask">
         <figure>
-          <img class="img-responsive" src={{cert.URL}} alt="" style="height: 247px;">
+          <img
+            class="img-responsive"
+            src="{{ cert.URL }}"
+            alt=""
+            style="height: 247px;"
+          />
           <figcaption>
-            <h5>{{cert.Name}}</h5>
-            <a data-toggle="modal" href="#myModal" (click)="datamodel(cert)" class="btn btn-primary btn-lg">Take a Look</a>
-          </figcaption><!-- /figcaption -->
-        </figure><!-- /figure -->
-      </div><!-- /grid-mask -->
-    </div><!-- /col -->
-
-  </div><!-- /row -->
-
-
-</div><!-- /row -->
+            <h5>{{ cert.Name }}</h5>
+            <a
+              data-toggle="modal"
+              href="#myModal"
+              (click)="datamodel(cert)"
+              class="btn btn-primary btn-lg"
+              >Take a Look</a
+            >
+          </figcaption>
+          <!-- /figcaption -->
+        </figure>
+        <!-- /figure -->
+      </div>
+    <hr>
+      <!-- /grid-mask -->
+    </div>
+    <!-- /col -->
+  </div>
+  <!-- /row -->
+</div>
+<!-- /row -->
